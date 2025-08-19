@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+    int i;
+
+    // Movimentação do Bispo (diagonal para baixo-direita)
+    printf("Movimento do Bispo:\n");
+    for (i = 1; i <= 8; i++) {
+        printf("Casa (%d,%d)\n", i, i);
+    }
+
+    // Movimentação da Torre (para direita na linha 1)
+    printf("\nMovimento da Torre:\n");
+    for (i = 1; i <= 8; i++) {
+        printf("Casa (1,%d)\n", i);
+    }
+
+    // Movimentação da Rainha (para esquerda na linha 4)
+    printf("\nMovimento da Rainha:\n");
+    for (i = 8; i >= 1; i--) {
+        printf("Casa (4,%d)\n", i);
+    }
+
+    return 0;
+}
+
